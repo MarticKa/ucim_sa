@@ -1,0 +1,85 @@
+body {
+  background: rgb(241, 224, 224);
+  margin: 0 auto;
+  width: 1160px;
+  padding: 100px 20px 100px 20px;
+  color: rgb(70, 66, 66);
+  -webkit-font-smooting: antialiased;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+h1 {
+  font-family: "Lora", serif;
+  font-size: 46px;
+  font-style: normal;
+  line-height: 50px;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+p {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 38px;
+  margin: 20px 0 10px 0;
+  padding: 20px 0;
+  max-width: 700px;
+}
+.first-click {
+  font-size: 14px;
+  color: rgb(70, 66, 66);
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0 10px;
+  font-weight: normal;
+}
+/*.test {
+  border-bottom: grey solid 2px;
+}*/
+
+.second-photo img {
+  margin-top: 60px;
+}
+.smaller-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.nevim {
+  border-bottom: grey solid 2px;
+  border-top: grey solid 2px;
+  padding-bottom: 8px;
+}
+
+.nevim h1 {
+  margin: 20px 0 30px;
+  padding: 10px 0;
+}
+div .zkouska {
+  padding-bottom: 40px;
+}
+.third-photo img {
+  margin-top: 40px;
+}
+a .first-click,
+.smaller-text {
+  text-transform: none;
+}
+.layout {
+  max-width: 300px;
+  padding-left: 70px;
+}
+.float-right {
+  float: right;
+}
+
+a .first-click, .border {
+    border-bottom: grey solid 2px;
+    display: block;
+    width: 700px;
+}

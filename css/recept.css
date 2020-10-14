@@ -1,0 +1,100 @@
+body {
+    width: 60%;
+    background-color: darkgreen;
+    padding: 50px;
+    margin: 50px auto;
+}
+h1, h2 {
+    font-family: fantasy;
+    margin: 0;
+}
+h1 {
+    color: darkred;
+    font-size: 42px;
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-size: 26px;
+    margin: 20px;
+    text-align: center;
+}
+h4 {
+    /*color: navy;*/
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    color: honeydew;
+    font-size: 16px;
+    font-family: 'Open Sans', 'Arial';
+    line-height: 26px;
+    padding: 20px;
+    font-weight: 300;
+    text-indent: 100px;
+}
+.need {
+    text-align: center;
+}
+
+ol {
+    color: honeydew;
+}
+.important{
+    color: rgb(209, 215, 218);
+    padding: 20px 300px;
+    margin: 25px auto;
+    line-height: 26px;
+}
+#mouka {
+    padding: 0px;
+    margin: 20px;
+}
+.btn_controls {
+    text-align: center;
+
+}
+.btn {
+    font-size: 16px;
+    background: grey;
+    padding: 9px 12px 9px 12px;
+    margin: 8px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.btn_like {
+    color: white;
+    background: blue;
+    border: blue;
+    padding: 9px 19px 9px 19px;
+    text-shadow: 2px 2px 0px rgb(41, 38, 38);
+
+}
+.btn_unlike {
+    color: white;
+    background: rgb(218, 101, 80);
+    border: rgb(218, 101, 80);
+    text-shadow: 2px 2px 0px rgb(41, 38, 38);
+
+}
+.btn_like:hover {
+    background: lightskyblue;
+}
+.btn_unlike:hover {
+    background: lightcoral;
+}
+.first_paragraph {
+    width: 400px;
+    height: 90px;
+    color: rgb(39, 37, 37);
+    background: beige;
+    border: 14px solid white;
+    margin: 50px auto;
+    padding: 20px;
+    overflow: auto;
+}
+.highlight_title {
+    color: yellow;
+}
