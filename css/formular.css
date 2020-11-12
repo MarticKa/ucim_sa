@@ -1,9 +1,53 @@
 body {
-    margin: 0;
+  color: #333;
+  font: normal 18px/30px 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-.section {
-    
+.container {
+    width: 760px;
+    margin: 0 auto;
+}
+section {
+    padding: 50px 0;
+    text-align: center;
 }
 .section-1 {
-    
+  background: rgb(219, 138, 178);
+  margin: 0;
+}
+.section-2 {
+  background: rgb(173, 128, 206);
+}
+.section-3 {
+  background: lightsalmon;
+}
+input:focus, textarea:focus {
+    outline: 2px solid rgb(21, 121, 179);
+}
+input :not([type="checkbox"]) :not([type="radio"]) :not([type="file"]),
+button,
+textarea {
+  background: #fff;
+  border: none;
+  width: 300px;
+  padding: 15px 20px;
+  margin: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+}
+textarea {
+  width: 675px;
+}
+button {
+  background: rgb(218, 87, 87);
+  color: rosybrown;
+}
+label  {
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  margin-left: 25px;
+}
+label [for="pamatuj"] {
+  margin-bottom: 25px;
 }

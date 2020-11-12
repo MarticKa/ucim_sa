@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/formular.css">
+  <header>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/formular.css" />
     <title>Formulare</title>
-    
-</header>
-<body>
-    <sectionc class="section-1">raz</section>
-    <sectionc class="section-2">dva</section>
-    <sectionc class="section-3">tri</section>
-</body>
+  </header>
+
+  <body>
+    <section class="section-1">
+      <h1 class="container">Formulár</h1>
+    </section>
+    <section class="section-2">
+      <form action="#" method="GET" class="container">
+        <input type="text" name="name" placeholder="Mr. Smith" required/>
+        <input type="email" name="email" value="@" />
+        <input type="password" name="pass" placeholder="password" />
+        <input type="date" name="date" />
+        <select name="serial">
+          <option value="1">My Little Pony</option>
+          <option value="2">Hello Kitty</option>
+          <option value="3">The Cow</option>
+        </select>
+        <textarea name="mesage" rows="6">Něco mi napiš</textarea>
+
+        <label for="pamatuj"> 
+            <input type="checkbox" name="remember" id="pamatuj" checked>Zapamatuj si</label>
+
+        <label>
+            <input type="radio" name="day" value="Friday">Friday
+        </label>
+        <label>
+            <input type="radio" name="day" value="Sunday">Sunday
+        </label>
+        <label>
+            <input type="radio" name="day" value="Wednesday" checked>Wednesday
+        </label>
+        
+        
+        
+        <button>Pošli mi to</button>
+      </form>
+    </section>
+    <section class="section-3">
+      <div class="container"></div>
+    </section>
+  </body>
 </html>
