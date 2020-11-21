@@ -6,9 +6,11 @@ body {
   font: normal 24px "Comfortaa", cursive;
   -webkit-font-smoothing: antialiased;
   margin: 0;
+  background-color: rgb(230, 219, 204);
 }
 article {
-  margin: 0 60px;
+  margin: 0 0px;
+  padding: 0 50px;
 }
 
 h1 {
@@ -18,7 +20,13 @@ h1 {
   font-size: 54px;
   padding: 70px;
   margin: 0;
-  text-shadow: 2px 2px rgba(51, 51, 51, 0.452);
+}
+h2 {
+  padding-top: 30px;
+}
+.east {
+  background-color: #dfdcd1;
+  margin-bottom: 30px;
 }
 .prechod {
   background-image: repeating-linear-gradient(
@@ -55,9 +63,14 @@ li {
 li a:hover {
   background-color: #a5a0a0;
 }
+p {
+  margin: 0;
+  padding-bottom: 30px;
+}
 .begin {
   text-align: center;
   font-size: 16px;
+  margin-top: 20px;
 }
 .begin time:before {
   content: " • ";
@@ -66,4 +79,15 @@ li a:hover {
 }
 .first-paragraph {
   margin: 50px 0;
+}
+.float {
+  float: right;
+  max-width: 600px;
+  padding-left: 170px;
+}
+.normal {
+max-width: 600px;
+}
+.map {
+  text-align: center;
 }
