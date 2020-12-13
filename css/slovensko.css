@@ -91,3 +91,9 @@ max-width: 600px;
 .map {
   text-align: center;
 }
+.footer {
+  color: #787878;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 10px;
+}
