@@ -9,6 +9,11 @@
     rel="stylesheet" />
   <title>Slovensko</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css" type="text/css" media="screen" />
+  <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+  <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+  <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
 </head>
 
 <body>
@@ -30,7 +35,7 @@
         <li><a href="#zilina">Žilina</a></li>
         <li><a href="#strecno">Strečno</a></li>
         <li><a href="#kralovany">Kraľovany</a></li>
-        <li><a href="#ruzomberok">Ružomberok-Salaš Krajinka</a></li>
+        <li><a href="#salas">Ružomberok-Salaš Krajinka</a></li>
         <li><a href="#vlkolinec">Vlkolínec</a></li>
         <li><a href="#liptovsky_milulas">Liptovský Mikuláš</a></li>
         <li>
@@ -38,64 +43,120 @@
         </li>
       </ul>
     </header>
-    
-      <h1 class="prechod">Putování po Slovensku</h1>
-      <p class="begin">
-        5 dní
-        <time datetime="2020-08-15"> 15 Srpen, 2020 - 20 Srpen, 2020</time>
-      </p>
-      <article>
-      <p class="first-paragraph">
-        Tart halvah pudding. Muffin bonbon I love donut cake bonbon pastry.
-        Cake soufflé I love I love jelly muffin. Croissant gummies donut
-        brownie jelly-o tootsie roll chocolate bar tart. Cheesecake I love
-        macaroon apple pie. Sesame snaps toffee I love I love cotton candy I
-        love caramels dragée chocolate. Oat cake bonbon apple pie. Dragée
-        chocolate cake carrot cake. Bear claw I love I love jujubes I love
-      </p>
 
+    <h1 class="prechod">Putování po Slovensku</h1>
+    <p class="begin">
+      5 dní
+      <time datetime="2020-08-15"> 15 Srpen, 2020 - 20 Srpen, 2020</time>
+    </p>
+    <article>
       <h2 id="bratislava">Bratislava</h2>
-      <p class="city">
-        Oat cake bonbon apple pie. Dragée chocolate cake carrot cake. Bear
-        claw I love I love jujubes I love
-      </p>
-      <div>
-        <a href="#">
-          <img src="img/photo_1.jpg" width="300" height="250" alt="Ilustrační foto" />
+      <div id="slovensko">
+        <a href="img/bratislava_1.png" rel="lightbox[slovensko]">
+          <img src="img/bratislava_1.png" width="300" height="250" alt="Ilustrační foto"/>
         </a>
 
-        <a href="#">
-          <img src="img/photo_2.jpg" width="300" height="250" alt="Ilustrační foto" />
+        <a href="img/bratislava_2.png" rel="lightbox[slovensko]">
+          <img src="img/bratislava_2.png" width="300" height="250" alt="Ilustrační foto" />
         </a>
 
-        <a href="#">
-          <img src="img/photo_3.jpg" width="300" height="250" alt="Ilustrační foto" />
+        <a href="img/bratislava_3.png" rel="lightbox[slovensko]">
+          <img src="img/bratislava_3.png" width="300" height="250" alt="Ilustrační foto" />
         </a>
       </div>
 
-      <h2 id="trnava">Trnava</h2>
-      <p class="city">
-        Oat cake bonbon apple pie. Dragée chocolate cake carrot cake. Bear
-        claw I love I love jujubes I love
-      </p>
+      <h2 id="trnava" id="beckov" id="trencin">Trnava, Beckov, Trenčín</h2>
       <div>
-        <a href="#">
-          <img src="img/photo_1.jpg" width="300" height="250" alt="Ilustrační foto" />
+        <a href="img/trnava_1.png" rel="lightbox[slovensko]">
+          <img src="img/trnava_1.png" width="300" height="250" alt="Ilustrační foto" />
         </a>
 
-        <a href="#">
-          <img src="img/photo_2.jpg" width="300" height="250" alt="Ilustrační foto" />
+        <a href="img/beckov_1.png" rel="lightbox[slovensko]">
+          <img src="img/beckov_1.png" width="300" height="250" alt="Ilustrační foto" />
         </a>
 
-        <a href="#">
-          <img src="img/photo_3.jpg" width="300" height="250" alt="Ilustrační foto" />
+        <a href="img/trencin_1.png" rel="lightbox[slovensko]">
+          <img src="img/trencin_1.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+      </div>
+
+      <h2 id="banska_stiavnica" id="hronsek" id="banska_bystrica">Banská Štiavnica, Hronsek, Zvolen, Banská Bystrica</h2>
+      <div>
+        <a href="img/banska_stiavnica.png" rel="lightbox[slovensko]">
+          <img src="img/banska_stiavnica.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+
+        <a href="img/hronsek.png" rel="lightbox[slovensko]">
+          <img src="img/hronsek.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+
+        <a href="img/zvolen_1.png" rel="lightbox[slovensko]">
+          <img src="img/zvolen_1.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/zvolen_2.png" rel="lightbox[slovensko]">
+          <img src="img/zvolen_2.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/banska_bystrica.png" rel="lightbox[slovensko]">
+          <img src="img/banska_bystrica.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+      </div>
+
+      <h2 id="cicmany" id="zilina">Čičmany, Žilina</h2>
+      <div>
+        <a href="img/cicmany_1.png" rel="lightbox[slovensko]">
+          <img src="img/cicmany_2.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+
+        <a href="img/zilina_1.png" rel="lightbox[slovensko]">
+          <img src="img/zilina_1.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+
+        <a href="img/zilina_2.png" rel="lightbox[slovensko]">
+          <img src="img/zilina_2.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/zilina_3.png" rel="lightbox[slovensko]">
+          <img src="img/zilina_3.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+      </div>
+
+      <h2 id="strecno" id="kralovany" id="salas" id="vlkolinec" id="liptovsky_mikulas">Strečno, Kraľovany, Salaš Krajinka, Liptovský Mikuláš</h2>
+      <div>
+        <a href="img/strecno_1.png" rel="lightbox[slovensko]">
+          <img src="img/strecno_1.png width="300" height="250" alt="Ilustrační foto" />
+        </a>
+
+        <a href="img/strecno_2.png" rel="lightbox[slovensko]">
+          <img src="img/strecno_2.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+
+        <a href="img/kralovany.png" rel="lightbox[slovensko]">
+          <img src="img/kralovany.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/salas.png" rel="lightbox[slovensko]">
+          <img src="img/salas.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/salas_2.png" rel="lightbox[slovensko]">
+          <img src="img/salas_2.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/vlkolinec_1.png" rel="lightbox[slovensko]">
+          <img src="img/vlkolinec_1.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/vlkolinec_2.png" rel="lightbox[slovensko]">
+          <img src="img/vlkolinec_2.png" width="300" height="250" alt="Ilustrační foto" />
+        </a>
+        <a href="img/spolecna.jpg" rel="lightbox[slovensko]">
+          <img src="img/spolecna.jpg" width="300" height="250" alt="Ilustrační foto" />
         </a>
       </div>
 
       <h1 class="east" id="priste">Východní Slovensko</h1>
+      <p class="begin">
+        ?? dní
+        <time datetime="2021-05-15"> Jaro/Léto 2021</time>
+      </p>
       <div class="map">
         <a href="#">
-          <img  src="img/mapa.jpg" width="900" height="450" alt="Ilustrační foto" />
+          <img src="img/mapa.jpg" width="900" height="450" alt="Ilustrační foto" />
         </a>
       </div>
       <aside class="float">
@@ -378,7 +439,7 @@
       </div>
     </article>
   </main>
-  <footer></footer>
+  <footer class="footer">made with love for SK &nbsp;&nbsp; &copy;2020</footer>
 </body>
 
 </html>
