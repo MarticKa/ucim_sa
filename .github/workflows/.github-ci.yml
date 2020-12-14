@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     name: setup
     steps:
-      - name: first
       run:
         - npm ci --no-optional
       artifacts:
