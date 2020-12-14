@@ -6,27 +6,22 @@ jobs:
     runs-on: ubuntu-latest
     name: setup
     steps:
-      run:
+      run: |
         - npm ci --no-optional
-      artifacts:
-        - node_modules/**
-      run:
         - npm run build
-      run:
         - npm run test
       
   cypress:
     name: cypress tests
     runs-on: cypress/included:3.8.3
     steps:
-      run:
-        - npm run test:e2e:ci
+      run: npm run test:e2e:ci
+  
   visual test:       
     name: visual tests
     runs-on: cypress/included:3.8.3
     steps:
-      run:
-        - npm run test:visual:ci
+      run: npm run test:visual:ci
       artifacts:
       - cypress/screenshots/**
       - cypress/snapshots/**
