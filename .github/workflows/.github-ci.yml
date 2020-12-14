@@ -6,22 +6,31 @@ jobs:
     runs-on: ubuntu-latest
     name: setup
     steps:
-      run: |
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+        run: |
         - npm ci --no-optional
         - npm run build
         - npm run test
       
   cypress:
     name: cypress tests
-    runs-on: cypress/included:3.8.3
+    runs-on: ubuntu-latest
+    container: cypress/included:3.8.3
     steps:
-      run: npm run test:e2e:ci
+      - uses: actions/checkout@v1
+        run: npm run test:e2e:ci
   
   visual test:       
     name: visual tests
-    runs-on: cypress/included:3.8.3
+    runs-on: ubuntu-latest
+    container: cypress/included:3.8.3
     steps:
-      run: npm run test:visual:ci
-      artifacts:
-      - cypress/screenshots/**
-      - cypress/snapshots/**
+      - uses: actions/checkout@v1
+        run: npm run test:visual:ci
+        artifacts:
+        - cypress/screenshots/**
+        - cypress/snapshots/**
