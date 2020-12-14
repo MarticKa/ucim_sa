@@ -1,30 +1,38 @@
 image: node:12.13.0
-stage:
-  - setup
-  - lints
-  - jest test
-  - cypress
 
-setup: 
-  stage: setup
-  script:
-    - npm ci --no-optional
-  artifacts:
-    - node_modules/**
-lints:
-  stage: lints
-  script: 
-    - npm run lint:js
-    - npm run lint:css
-jest test:
-  stage: jest test
-  script:
-    - npm run test
-cypress tests:
-  stage: cypress
-  image: cypress/included:3.8.3
-  script:
-    - npm run test:e2e:ci
-  artifacts:
-    - cypress/screenshots/**
-    - cypress/snapshots/**
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: setup
+            script:
+              - npm ci --no-optional
+            artifacts:
+              - node_modules/**
+    - parallel:
+        - step:
+            name: build
+            script:
+              - npm run build
+        - step:
+            name: lints
+            script:
+              - npm run lint:js
+              - npm run lint:css
+        - step:
+            name: jest tests
+            script:
+              - npm run test
+        - step:
+            name: cypress tests
+            image: cypress/included:3.8.3
+            script:
+              - npm run test:e2e:ci
+        - step:
+            name: visual tests
+            image: cypress/included:3.8.3
+            script:
+              - npm run test:visual:ci
+            artifacts:
+              - cypress/screenshots/**
+              - cypress/snapshots/**
