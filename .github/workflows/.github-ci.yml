@@ -1,4 +1,4 @@
-image: node:12.13.0
+name: pipeline
 on: push
 jobs:
   
@@ -11,10 +11,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-        run: |
-        - npm ci --no-optional
-        - npm run build
-        - npm run test
+      - run: |
+          npm ci --no-optional
+          npm run build
+          npm run test
       
   cypress:
     name: cypress tests
@@ -22,7 +22,7 @@ jobs:
     container: cypress/included:3.8.3
     steps:
       - uses: actions/checkout@v1
-        run: npm run test:e2e:ci
+      - run: npm run test:e2e:ci
   
   visual test:       
     name: visual tests
@@ -30,7 +30,4 @@ jobs:
     container: cypress/included:3.8.3
     steps:
       - uses: actions/checkout@v1
-        run: npm run test:visual:ci
-        artifacts:
-        - cypress/screenshots/**
-        - cypress/snapshots/**
+      - run: npm run test:visual:ci
