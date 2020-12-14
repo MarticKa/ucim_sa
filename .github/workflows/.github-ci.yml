@@ -1,5 +1,5 @@
 image: node:12.13.0
-
+on: push
 pipelines:
   default:
     - parallel:
