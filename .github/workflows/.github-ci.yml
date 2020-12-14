@@ -1,0 +1,30 @@
+image: node:12.13.0
+stage:
+  - setup
+  - lints
+  - jest test
+  - cypress
+
+setup: 
+  stage: setup
+  script:
+    - npm ci --no-optional
+  artifacts:
+    - node_modules/**
+lints:
+  stage: lints
+  script: 
+    - npm run lint:js
+    - npm run lint:css
+jest test:
+  stage: jest test
+  script:
+    - npm run test
+cypress tests:
+  stage: cypress
+  image: cypress/included:3.8.3
+  script:
+    - npm run test:e2e:ci
+  artifacts:
+    - cypress/screenshots/**
+    - cypress/snapshots/**
