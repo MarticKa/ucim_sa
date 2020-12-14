@@ -19,14 +19,12 @@ jobs:
     name: cypress tests
     runs-on: cypress/included:3.8.3
     steps:
-      - name: cypress tests
       run:
         - npm run test:e2e:ci
   visual test:       
     name: visual tests
     runs-on: cypress/included:3.8.3
     steps:
-      - name: visual cypress tests
       run:
         - npm run test:visual:ci
       artifacts:
