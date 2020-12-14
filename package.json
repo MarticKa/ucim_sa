@@ -10,7 +10,13 @@
     "cypress": "^6.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run generate:git-version && gatsby build",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
+    "test:visual": "start-server-and-test develop http://localhost:8000 visual:open",
+    "test:visual:ci": "start-server-and-test develop http://localhost:8000 visual:run"
   },
   "repository": {
     "type": "git",
