@@ -12,11 +12,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run generate:git-version && gatsby build",
+    "clean": "gatsby clean",
+    "develop": "npm run start & npm run server",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "lint:js": "npx eslint ./*.js ./.*.js src",
+    "lint:css": "stylelint 'src/**/*.css'",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "server": "nodemon --exec babel-node server/index.js --presets @babel/preset-env --watch server",
+    "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "visual:open": "cypress open --config-file cypress.visual.json",
+    "visual:run": "cypress run --config-file cypress.visual.json",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run",
     "test:visual": "start-server-and-test develop http://localhost:8000 visual:open",
-    "test:visual:ci": "start-server-and-test develop http://localhost:8000 visual:run"
+    "test:visual:ci": "start-server-and-test develop http://localhost:8000 visual:run",
+    "generate:git-version": "node config/generate-version.js"
   },
   "repository": {
     "type": "git",
