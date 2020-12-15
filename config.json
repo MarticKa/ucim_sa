@@ -1,0 +1,15 @@
+const { gitDescribeSync } = require('git-describe');
+const { writeFileSync, mkdirSync } = require('fs');
+const path = require('path');
+
+const { hash: version } = gitDescribeSync();
+
+mkdirSync('./public', { recursive: true }, error => {
+  /*eslint-disable-next-line no-console */
+  console.error('Cannot create directory ./public: ', error);
+});
+
+writeFileSync(
+  path.resolve('./public/version.json'),
+  JSON.stringify({ version }, null, 2)
+);
